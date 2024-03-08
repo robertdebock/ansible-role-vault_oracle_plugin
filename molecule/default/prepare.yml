@@ -1,0 +1,11 @@
+---
+- name: Prepare
+  hosts: all
+  become: yes
+  gather_facts: no
+
+  roles:
+    - role: robertdebock.bootstrap
+    - role: robertdebock.core_dependencies
+    - role: robertdebock.oracle_instant_client
+      oracle_instant_client_version: "19.17.0.0.0"
