@@ -7,6 +7,11 @@
   run_once: yes
   delegate_to: localhost
 
+- name: Install requirements
+  ansible.builtin.package:
+    name: "{{ item }}"
+  loop: "{{ vault_plugin_oracle_requirements }}"
+
 - name: Create plugin directory
   ansible.builtin.file:
     path: "{{ vault_plugin_oracle_directory }}"
