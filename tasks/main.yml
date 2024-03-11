@@ -15,7 +15,7 @@
 
 - name: Install vault-plugin-database-oracle
   ansible.builtin.unarchive:
-    src: "https://releases.hashicorp.com/vault-plugin-database-oracle/{{ vault_plugin_oracle_version }}/vault-plugin-database-oracle{{ vault_plugin_oracle_version }}_linux_amd64.zip"
+    src: "https://releases.hashicorp.com/vault-plugin-database-oracle/{{ vault_plugin_oracle_version }}/vault-plugin-database-oracle_{{ vault_plugin_oracle_version }}_linux_amd64.zip"
     dest: "{{ vault_plugin_oracle_directory }}"
     remote_src: yes
     creates: "{{ vault_plugin_oracle_directory }}/vault-plugin-database-oracle"
