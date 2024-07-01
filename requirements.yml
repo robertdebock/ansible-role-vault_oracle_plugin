@@ -3,3 +3,4 @@ roles:
   - name: robertdebock.bootstrap
   - name: robertdebock.core_dependencies
   - name: robertdebock.oracle_instant_client
+  - name: community.general
