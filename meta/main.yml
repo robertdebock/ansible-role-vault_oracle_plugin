@@ -16,7 +16,8 @@ galaxy_info:
         - "9"
     - name: Ubuntu
       versions:
-        - all
+        - jammy
+        - focal
 
   galaxy_tags:
     - vaultoracleplugin
