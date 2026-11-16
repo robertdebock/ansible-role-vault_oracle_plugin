@@ -5,4 +5,4 @@
 repository:
   description: Installs the vault_plugin-database-oracle on your system.
   homepage: https://robertdebock.nl/
-  topics: vaultoracleplugin, application, database, infrastructure, linux, security, system, tools, ansible, molecule, tox, playbook
+  topics: vaultoracleplugin, application, database, infrastructure, linux, security, system, tools, ansible, molecule, playbook

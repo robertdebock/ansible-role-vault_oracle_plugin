@@ -6,4 +6,4 @@ _vault_plugin_oracle_requirements:
     - libcap
   Debian:
     - libcap2-bin
-vault_plugin_oracle_requirements: "{{ _vault_plugin_oracle_requirements[ansible_os_family] | default(_vault_plugin_oracle_requirements['default']) }}"
+vault_plugin_oracle_requirements: "{{ _vault_plugin_oracle_requirements[ansible_facts['os_family']] | default(_vault_plugin_oracle_requirements['default']) }}"

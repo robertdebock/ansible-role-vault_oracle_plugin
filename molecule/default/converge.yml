@@ -5,4 +5,4 @@
   gather_facts: true
 
   roles:
-    - role: ansible-role-vault_oracle_plugin
+    - role: robertdebock.vault_oracle_plugin
