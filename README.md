@@ -51,7 +51,7 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 vault_plugin_oracle_directory: /opt/vault/plugins
 
 # The version of the plugin to install. See https://releases.hashicorp.com/vault-plugin-database-oracle/ .
-vault_plugin_oracle_version: 0.9.0
+vault_plugin_oracle_version: "0.9.0"
 ```
 
 ## [Requirements](#requirements)
@@ -85,11 +85,7 @@ This role has been tested on these [container images](https://hub.docker.com/u/r
 |[EL](https://hub.docker.com/r/robertdebock/enterpriselinux)|9|
 |[Ubuntu](https://hub.docker.com/r/robertdebock/ubuntu)|jammy|
 
-The minimum version of Ansible required is 2.12, tests have been done on:
-
-- The previous version.
-- The current version.
-- The development version.
+The minimum version of Ansible (ansible-core) required is 2.20, tests are done with the latest release of ansible-core.
 
 If you find issues, please register them on [GitHub](https://github.com/robertdebock/ansible-role-vault_oracle_plugin/issues).
 
